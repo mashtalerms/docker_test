@@ -11,4 +11,4 @@ jobs:
       - name: login
         run: docker login -u ${{ secrets.DOCKER_NAME }} -p ${{ secrets.DOCKER_TOKEN }}
       - name: push
-        run: docker push ${{ secrets.DOCKER_NAME }}/mmashtaler/test_docker:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+        run: docker push ${{ secrets.DOCKER_NAME }}/test_docker:$GITHUB_REF_NAME-$GITHUB_RUN_ID
